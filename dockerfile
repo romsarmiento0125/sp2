@@ -1,4 +1,4 @@
-FROM maven:3.8.5
+FROM openjdk:20
 
 WORKDIR /app
 
@@ -8,4 +8,4 @@ RUN mvn clean install
 
 EXPOSE 8080
 
-CMD ["mvn", "jetty:run"]
+CMD ["mvn", "spring-boot:run"]
